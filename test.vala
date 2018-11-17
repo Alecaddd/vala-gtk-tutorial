@@ -1,16 +1,22 @@
-int main (string[] args) {
-	Gtk.init (ref args);
+public class Test : Gtk.Application {
 
-	var window = new Gtk.Window ();
-	window.title = "This is my Vala Test";
-	window.border_width = 10;
-	window.window_position = Gtk.WindowPosition.CENTER;
-	window.set_default_size (350, 80);
+	public Test () {
+		Object (
+			application_id: "com.github.alecaddd.test",
+			flags: ApplicationFlags.FLAGS_NONE
+		);
+	}
 
-	window.destroy.connect (Gtk.main_quit);
+	protected override void activate () {
+		var window = new Gtk.ApplicationWindow (this);
+	 	window.title = "This is my Vala Test";
+	 	window.window_position = Gtk.WindowPosition.CENTER;
+	 	window.set_default_size (350, 80);
+	 	window.show_all ();
+	}
 
-	window.show_all ();
-
-	Gtk.main ();
-	return 0;
+	public static int main (string[] args) {
+		var test = new Test ();
+		return test.run (args);
+	}
 }
