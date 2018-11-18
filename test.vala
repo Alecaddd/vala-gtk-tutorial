@@ -8,6 +8,10 @@ public class Test : Gtk.Application {
 	}
 
 	protected override void activate () {
+		build_window ();
+	}
+
+	private void build_window () {
 		var window = new Gtk.ApplicationWindow (this);
 	 	window.title = "This is my Vala Test";
 	 	window.window_position = Gtk.WindowPosition.CENTER;
@@ -19,4 +23,5 @@ public class Test : Gtk.Application {
 		var test = new Test ();
 		return test.run (args);
 	}
+
 }
