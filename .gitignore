@@ -1,1 +1,4 @@
 test
+*.vala~
+*.gitignore~
+myapp
