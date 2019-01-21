@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+ <schema path="/com/github/alecaddd/jarvis/" id="com.github.alecaddd.jarvis" gettext-domain="jarvis">
+	<key name="pos-x" type="i">
+	 <default>360</default>
+	 <summary>Horizontal position</summary>
+	 <description>The saved horizontal position of our window</description>
+	</key>
+
+	<key name="pos-y" type="i">
+	 <default>360</default>
+	 <summary>Vertical position</summary>
+	 <description>The saved vertical position of our window</description>
+	</key>
+
+	<key name="window-width" type="i">
+		<default>600</default>
+		<summary>Window width</summary>
+		<description>The saved width of our window</description>
+	</key>
+
+	<key name="window-height" type="i">
+		<default>400</default>
+		<summary>Window height</summary>
+		<description>The saved height of our window</description>
+	</key>
+ </schema>
+</schemalist>

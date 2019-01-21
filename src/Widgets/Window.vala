@@ -11,6 +11,10 @@ public class Jarvis.Window : Gtk.ApplicationWindow {
 	 	window_position = Gtk.WindowPosition.CENTER;
 	 	set_default_size (350, 80);
 
+	 	var settings = new GLib.Settings ("com.github.alecaddd.jarvis");
+
+	 	move (settings.get_int ("pos-x"), settings.get_int ("pos-y"));
+
 	 	show_all ();
 	}
 }
