@@ -5,6 +5,7 @@ executable(
 	'Application.vala',
 
 	'Widgets/Window.vala',
+	'Widgets/HeaderBar.vala',
 
 	dependencies: [
 		dependency('gtk+-3.0')
